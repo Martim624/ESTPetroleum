@@ -25,9 +25,13 @@ public class Central {
 	 * @param matricula matrícula a pesquisar matricula
 	 * @return o camião com a matrícula indicada, ou null se não existir
 	 */
-	public Camiao getCamiao(String matricula ) {
-		// TODO fazer este método
-		return null;
+	public Camiao getCamiao(String matricula) {
+		for (Camiao camiao : camioes) {
+			if (camiao.getMatricula().equals(matricula)) {
+				return camiao;
+			}
+		}
+		return null; 
 	}
 	
 	/** retorna o posto que tem um dado id

@@ -23,7 +23,7 @@ public class Camiao {
 	    this.velocidadeMedia = velocidadeMedia;
 	    this.debito = debito;
 	}
-	a
+	
 	public String toString() {
         return "Matrícula: " + matricula +
                ", Capacidade: " + capacidade + " litros" +
@@ -123,5 +123,21 @@ public class Camiao {
 	public int capacidadeLivre() {
 		// TODO fazer este método
 		return 0;
+	}
+
+	public String getMatricula() {
+		return matricula;
+	}
+	
+	public int getCapacidade() {
+		return capacidade;
+	}
+	
+	public int getVelocidadeMedia() {
+		return velocidadeMedia;
+	}
+	
+	public int getDebito() {
+		return debito;
 	}
 }
